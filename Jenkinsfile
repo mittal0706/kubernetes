@@ -1,10 +1,9 @@
-pipeline{
-  agent any {
+pipeline {
+  agent any
   
-  }
   stages{
-    stage{
-      steps('git checkout'){
+    stage('git checkout'){
+      steps{
         git 'https://github.com/mittal0706/kubernetes.git'
       }
     }
